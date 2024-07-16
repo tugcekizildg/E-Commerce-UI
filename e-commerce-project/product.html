@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Section-->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="" class="nav__link"> <img src="img/profile.png" alt="profile" class="profile-icon"></a>
+
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brand">Shopping World</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart 2
+                    Products - $425.48</a>
+            </li>
+        </ul>
+    </nav>
+    <main class="flex-center">
+        <div class="main-content">
+            <section class="product-details flex-center">
+                <div class="product-details__left flex-center">
+                    <img src="img/headphones.png" alt="headphones">
+                </div>
+                <div class="product-details__right">
+                    <h3 class="product__name">
+                        Beats Headphone
+                    </h3>
+                    <p><span class="dot orange"></span>
+                        <span class="dot blue"></span>
+                        <span class="dot purple"></span>
+                    </p>
+                    <p class="product__desc"><strong>Description:</strong> Beats Headphones deliver an unparalleled
+                        audio experience, blending style with exceptional sound quality. Engineered for crisp highs,
+                        dynamic mids, and deep, powerful bass, Beats headphones bring your music to life. The sleek
+                        design and premium materials ensure maximum comfort and durability, making them perfect for long
+                        listening sessions. With advanced noise-canceling technology, Beats headphones let you immerse
+                        yourself fully in your music, blocking out distractions. Whether you're a casual listener or an
+                        audiophile, Beats headphones offer a superior listening experience that sets the standard for
+                        premium audio gear.
+                        Beats headphones, a brand synonymous with high-quality audio and sleek design, have become a
+                        favorite among music enthusiasts and casual listeners alike.
+                    </p>
+                    <br>
+                    <p class="product__desc"> Known for their exceptional sound
+                        clarity, deep bass, and noise-canceling features, Beats headphones deliver an immersive
+                        listening experience. Their iconic, stylish design comes in a variety of colors and finishes,
+                        making them a fashion statement as much as a tech accessory.</p>
+                    <h4 class="product__price">
+                        $222.99
+                    </h4>
+                    <p class="product__rating"><strong>Rating: </strong>4.5 / 5</p>
+                    <div class="details__btn">
+                        <button class="btn product-details__btn">Add to Cart</button>
+                        <button class="btn product-details__btn">Back to Shopping</button>
+                    </div>
+
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2024 Shopping World.All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

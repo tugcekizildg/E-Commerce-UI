@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Project</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Navbar Section-->
+    <i class="fas fa-bars fa-2x" id="menu-icon"></i>
+    <nav id="menu" class="hidden">
+        <ul class="nav-upper flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Home</a>
+            </li>
+            <li class="nav__list">
+                <a href="register.html" class="nav__link">Register</a>
+            </li>
+            <li class="nav__list">
+                <a href="login.html" class="nav__link">Login</a>
+            </li>
+            <li class="nav__list">
+                <a href="index.html" class="nav__link">Logout</a>
+            </li>
+            <li class="nav__list">
+                <a href="contact.html" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__list">
+                <a href="profile.html" class="nav__link"> <img src="img/profile.png" alt="profile"
+                        class="profile-icon"></a>
+
+            </li>
+        </ul>
+        <ul class="nav-lower flex-space-around">
+            <li class="nav__list">
+                <a href="index.html" class="nav__link nav__brand">Shopping World</a>
+            </li>
+            <li class="nav__list">
+                <a href="cart.html" class="nav__link"><span><i class="fa-solid fa-cart-shopping"></i></span>Cart 2
+                    Products - $425.48</a>
+            </li>
+        </ul>
+    </nav>
+
+    <!-- Header Section-->
+    <header class="header">
+        <div class="banner flex-space-around">
+            <div class="features flex-space-around">
+                <article class="feature flex-center">
+                    <i class="fa-solid fa-truck feature__icon">
+                    </i>
+                    <h3>Shipping within 7 days</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-brands fa-rocketchat feature__icon">
+                    </i>
+                    <h3>Support 24 / 7</h3>
+                </article>
+                <article class="feature flex-center">
+                    <i class="fa-regular fa-credit-card feature__icon">
+                    </i>
+                    <h3>Safe Payment</h3>
+                </article>
+            </div>
+        </div>
+    </header>
+    <main class="flex-center">
+        <!-- Sidebar Section-->
+        <div class="sidebar">
+            <section class="categories-section">
+                <h3 class="section-title">Categories</h3>
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="phone">
+                            <input type="checkbox" name="" id="phone" value="phones">
+                            Phones
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="tablets">
+                            <input type="checkbox" name="" id="tablets" value="tablets">
+                            Tablets
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="televisions">
+                            <input type="checkbox" name="" id="televisions" value="televisions">
+                            Televisions
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="computers">
+                            <input type="checkbox" name="" id="computers" value="computers">
+                            Computers
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="headphones">
+                            <input type="checkbox" name="" id="headphones" value="headphones">
+                            Headphones
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="price-section">
+                <h3 class="section-title">Price Range</h3>
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="price1">
+                            <input type="radio" name="pricing" id="price1" value="[0,20]">
+                            $0-$20
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price2">
+                            <input type="radio" name="pricing" id="price2" value="[21,50]">
+                            $21-$50
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price3">
+                            <input type="radio" name="pricing" id="price3" value="[51,100]">
+                            $51-$100
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="price4">
+                            <input type="radio" name="pricing" id="price4" value="[101+]">
+                            $101+
+                        </label>
+                    </li>
+                </ul>
+            </section>
+            <section class="shipping-section">
+                <h3 class="section-title">Shipping Options</h3>
+                <ul class="list">
+                    <li class="list__item">
+                        <label for="free">
+                            <input type="radio" name="shipping" id="free" value="free">
+                            Free
+                        </label>
+                    </li>
+                    <li class="list__item">
+                        <label for="paid">
+                            <input type="radio" name="shipping" id="paid" value="paid">
+                            Paid
+                        </label>
+                    </li>
+                </ul>
+            </section>
+        </div>
+        <div class="main-content">
+            <section class="actions flex-space-around">
+                <div class="actions__sort">
+                    <label for="sort">Sort By:</label>
+                    <select name="sort" id="sort">
+                        <option value="sold">Most Sold First</option>
+                        <option value="rating">Most Rated First</option>
+                        <option value="price">Cheapest First</option>
+                        <option value="arrival">Newest First</option>
+                        <option value="discount">Biggest Discount First</option>
+                    </select>
+                </div>
+                <div class="actions__search">
+                    <input type="text" placeholder="Search Product">
+                    <button class="btn">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+            </section>
+            <!-- Products Section-->
+            <section class="products">
+                <article class="product card">
+                    <div class="badge"><span>
+                            5 in Stock
+                        </span></div>
+                    <img src="img/headphones.png" alt="gold headphones">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Beats Headphone
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">Engineered for crisp highs, dynamic mids, and deep, powerful bass,
+                            Beats headphones bring your music to life...<a href="product.html" class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $222.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.5 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge"><span>
+                            2 in Stock
+                        </span></div>
+                    <img src="img/product2.png" alt="apple smart watch">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Apple Watch 2
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">Rugged design for extreme sports and enhanced durability, and
+                            specialized features and technology to bring you...<a href="product.html"
+                                class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $399.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.6 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge"><span>
+                            7 in Stock
+                        </span></div>
+                    <img src="img/product3.jpg" alt="sunglasses">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            RayBan Sunglass Aviator
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">Made with lightweight metal frames and impact-resistant lenses, these
+                            sunglasses are built to withstand...<a href="product.html" class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $199.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.3 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge"><span>
+                            1 in Stock
+                        </span></div>
+                    <img src="img/product4.jpg" alt="shoes">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Nike Shoes Air
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">From the innovative Air Max cushioning to the sleek Flyknit fabric,
+                            every pair of Nike shoes is engineered high quality product run...<a href="product.html"
+                                class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $199.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.1 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge"><span>
+                            3 in Stock
+                        </span></div>
+                    <img src="img/product5.jpg" alt="smart watch">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Apple Watch Series 3
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">With advanced health monitoring features like ECG, blood oxygen level
+                            tracking, and sleep analysis, the Apple Watch is your personal health companion. ...<a
+                                href="product.html" class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $499.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.3 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+                <article class="product card">
+                    <div class="badge"><span>
+                            4 in Stock
+                        </span></div>
+                    <img src="img/product6.jpg" alt="bluethoot speaker">
+                    <div class="product__body">
+                        <h3 class="product__name">
+                            Amazon Echo Studio
+                        </h3>
+                        <p><span class="dot orange"></span>
+                            <span class="dot blue"></span>
+                            <span class="dot purple"></span>
+                        </p>
+                        <p class="product__desc">With five strategically positioned speakers, the Echo Studio delivers
+                            immersive sound with powerful bass, dynamic midrange, and crisp highs...<a
+                                href="product.html" class="learn-more">Learn
+                                More</a></p>
+                        <h4 class="product__price">
+                            $299.99
+                        </h4>
+                        <p class="product__rating">Rating: 4.2 / 5</p>
+                        <button class="btn product__btn">Add to Cart</button>
+                    </div>
+                </article>
+            </section>
+            <!-- Pagination Section-->
+            <div class="pagination">
+                <button class="btn pagination__btn">
+                    <i class="fab fa-less-than"></i>
+                </button>
+                <button class="btn pagination__btn">2</button>
+                <button class="btn pagination__btn">3</button>
+                <button class="btn pagination__btn">4</button>
+                <button class="btn pagination__btn">5</button>
+                <button class="btn pagination__btn">6</button>
+                <button class="btn pagination__btn">7</button>
+                <button class="btn pagination__btn">8</button>
+                <button class="btn pagination__btn">9</button>
+                <button class="btn pagination__btn">10</button>
+                <button class="btn pagination__btn">...</button>
+                <button class="btn pagination__btn">
+                    <i class="fab fa-greater-than"></i>
+                </button>
+            </div>
+        </div>
+    </main>
+    <footer class="flex-space-around">
+        <div class="flex-space-around">
+            <label for="subscribe">Subscribe to Newsletter:</label>
+            <input type="email" id="subscribe" name="subscribe" class="footer__input" placeholder="Your Email Address">
+            <button class="btn btn-subscribe">Subscribe</button>
+        </div>
+        <div>
+            <p>&copy; Copyright 2024 Shopping World.All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
